@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+    <head>            
+        <title>
+            Assignment 1
+        </title>
+        <style>
+            .div1{
+                text-align: center;
+            }
+        </style>
+        <script>
+            function url() {
+                var newurl = document.getElementById("url").value;
+                document.getElementById("frame").src=newurl;
+            }
+            function sizec() {
+                var h = document.getElementById("height").value;
+                var w = document.getElementById("width").value;
+                document.getElementById("frame").height=h+"px";
+                document.getElementById("frame").width=w+"px";
+            }
+        </script>
+    </head>
+<body>
+    <div class="div1">
+        <p>
+        <h2>
+        My First sub-window
+        </h2>
+    </p>
+    <form>
+        <!-- <input type="text" id="url">
+        <input type="button" value="GO!" onclick="web();">   <br>  -->
+        <p>Enter the dimensions </p>
+        <p>Width
+        <input type="number" id="width" placeholder="Enter Width Here"><br>
+        </p>
+        <p>Height
+        <input type="number" id="height" placeholder="Enter Height Here"><br>        
+    </p>
+        <input type="button" value="Change SIZE" onclick="sizec();">    
+    </form>
+    <iframe name="myFrame" width="300px" height="200px" id="frame" src="https://www.bing.com/"></iframe>
+    </div>
+    
+    </body>
+</html>
