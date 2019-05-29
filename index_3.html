@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head>
+    <title>index1.3</title></head>
+    <!-- <!-- <style> -->
+    
+    
+    <style>
+    #support-box{
+        width:100%;
+        height:100%;
+
+
+        }
+    #wrapper {
+        position:relative;
+        display: block;
+        height:100%;
+        width:100%;}
+        #wrapper iframe{
+            width: 100%;
+            display: block;
+
+        }
+        #btn{
+            position:relative;
+            /* align="center"; */
+            /* box-align: ; */
+            /* background-color: lightslategrey */
+        }
+    </style>  
+    <body>
+        <h1 align="center">MY FIRST SUBWINDOW</h1>
+<!--   
+        <form action href="https://www.google.com/webhp?igu=1"><input type="button" value="GOOLGLE" /></form>
+       
+        <form action href="https://www.bing.com/"><input type="button" value="BING" /></form> -->
+        <button id="btn" name="wikipedia"  formtarget="box" onclick="getElementById('ifr').src='https://www.google.com/webhp?igu=1'">GOOGLE</button>
+        <button id="btn" name="wikipedia"  formtarget="box" onclick="getElementById('ifr').src='https://www.bing.com/'">BING</button>
+        <button id="btn" name="wikipedia"  formtarget="box" onclick="getElementById('ifr').src='https://www.wikipedia.org/'">WIKIPEDIA</button>
+        <button id="btn" name="iitk" formtarget="box" onclick="getElementById('ifr').src='https://www.iitk.ac.in/'">IITK</button><br><br><br> 
+        <div id="support-box"><div id="wrapper"><iframe  style="float:top"  id="ifr" name="box"
+        src="https://www.google.com/webhp?igu=1" height ="300px" width ="200px" ></iframe></div>
+    </div></body>
+    
+</html>
